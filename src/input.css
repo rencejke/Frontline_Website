@@ -1,0 +1,487 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container
+{
+    @apply max-w-[80rem] px-[3rem] py-3  w-full mx-auto
+    border-none;
+    
+}
+body
+{
+    @apply font-montserrat;
+}
+
+
+@layer components
+{
+    .header
+    {
+        @apply bg-light relative;
+    }
+
+    .branding
+    {
+        @apply md:flex items-center gap-12
+    }
+    .branding img
+    {
+        @apply w-[12rem];
+    }
+
+    .branding .header__navd
+    {
+        @apply hidden md:flex gap-10;
+    }
+
+    .branding .header__navd li a
+    {
+        @apply font-medium text-sm text-black;
+    }
+
+    .header__action
+    {
+        @apply bg-light absolute top-[4.7rem] 
+        right-0 w-[0] h-[90vh] px-0 pt-0 
+        overflow-hidden transition-all 
+         md:static md:h-fit md:w-fit md:shadow-none;
+
+    }
+    .header__action.open
+    {
+        @apply w-[100%] transition-all;
+    }
+
+    .header__action .header__navm
+    {
+        @apply  pb-5 flex 
+        flex-col gap-5 md:hidden text-center ;
+    }
+
+    .header__action .header__navm li:hover a
+    {
+        @apply text-berde;
+    }
+    .header__action .header__navm li a
+    {
+        @apply font-normal text-[1rem] text-black border-b-[.1rem] border-gray-400
+        block w-[100%] py-4;
+    }
+    .header__action .header__btn a
+    {
+       @apply flex gap-[1rem] items-center hover:text-berde
+    }
+    .header__action .header__kamote
+    {
+        @apply flex gap-5 xs:invisible md:visible
+    }
+    .header__action .header__kamote li a
+    {
+        @apply 
+        text-frntlne_clr
+        uppercase
+    }
+
+    .burger__menu
+    {
+        @apply md:hidden;
+    }
+
+    .burger__menu span
+    {
+        @apply w-[2.7rem] h-[.5rem] bg-frntlne_clr_darker 
+        block rounded-full transition-all
+    }
+
+    .burger__menu span:nth-child(2)
+    {
+        @apply my-[.3rem]
+    }
+
+    .header__wrapper
+    {
+        @apply flex items-center justify-between
+    }
+
+
+    .burger__menu.open span:first-child
+    {
+        @apply transform translate-y-[10px] rotate-[225deg] transition-all
+    }
+
+    .burger__menu.open span:nth-child(2)
+    {
+        @apply opacity-0 transition-all
+    }
+
+    .burger__menu.open span:last-child
+    {
+        @apply transform translate-y-[-16px] rotate-[-225deg] transition-all
+    }
+}
+.banner
+{
+    @apply
+    bg-gray_banner
+    md:pt-12
+}
+.banner__wrapper
+{
+    @apply grid grid-cols-1
+    md:grid-cols-2 place-items-center 
+}
+.banner__text
+{
+    @apply pt-5
+    
+}
+.banner__text h4
+{
+    @apply 
+    text-[1.6rem]
+    pb-5
+    md:text-[2rem]
+}
+.banner__text p
+{
+    @apply 
+    mb-6
+}
+.banner__text h4 span
+{
+    @apply font-extrabold
+}
+.banner__image
+{
+    @apply *:mt-6
+}
+
+/* about */
+
+.about
+{
+    @apply text-center 
+    mt-12
+    md:py-11
+}
+
+.about__wrapper h4
+{
+    @apply
+    text-[2rem]
+    pb-5
+}
+
+.about__wrapper p
+{
+    @apply 
+    text-balance
+    text-[1rem]
+    w-[auto]
+    pb-6
+    md:pb-8
+}
+
+/* offer */
+.offer
+{
+    @apply
+    mt-12
+    py-12
+    md:py-[8rem]
+    bg-sectionBanner
+    min-h-[600px]
+    bg-no-repeat
+    bg-cover
+    bg-center
+    text-light
+}
+.offer__wrapper
+{
+    @apply
+    grid
+    grid-cols-1
+    md:grid-cols-4
+    gap-8
+ 
+}
+.offer__wrapper .offer__item
+{
+    @apply
+    pt-[2rem]
+    pb-3
+   
+}
+.offer__wrapper .offer__item .offer_title h6
+{
+    @apply 
+    text-[1.4rem]
+    pt-[.8rem]
+}
+
+.offer__wrapper .offer__item i
+{
+    @apply
+    text-[3.5rem]
+}
+
+.offer__wrapper ul li
+{
+    @apply
+    text-[1rem]
+    font-light
+    py-1
+}
+
+/* testimonies */
+.testimonies
+{
+    @apply
+    bg-gray_banner pt-12;
+}
+.events
+{
+    @apply
+    mt-12
+}
+.events__wrapper
+{
+    @apply
+    md:grid
+    md:grid-cols-3
+    gap-[1.5rem]
+}
+
+.events__cards
+{
+    @apply
+    shadow-lg
+    pb-[3rem]
+    mb-[2rem]
+}
+.events__cards img
+{
+    @apply
+    w-[100%]
+}
+
+.events__cards h5
+{
+    @apply 
+    font-semibold
+    py-4
+    text-[1.3rem]
+    
+}
+.events__cards p
+{
+    @apply
+    pb-[3rem]
+    text-[.9rem]
+    md:pb-[9rem]
+    px-[3rem]
+    md:text-[1.1rem]
+}
+
+.events__cards
+{
+    @apply
+    text-center
+    overflow-clip
+}
+.events__cards img
+{
+    @apply
+    hover:scale-110
+    transition-all
+    duration-500
+}
+
+/* footer */
+
+.footer
+{
+    @apply
+    bg-frntlne_clr_darker
+    text-light
+    md:py-12
+    py-12
+    
+}
+
+.footer__wrapper
+{
+    @apply
+    md:grid md:grid-cols-3
+    xs:grid-cols-1
+   
+    
+}
+.footer__item h5
+{
+    @apply
+    text-center
+}
+
+.footer .footer__item:first-child ul
+{
+    @apply
+    text-[1.5rem]
+    flex
+    flex-row
+    gap-6
+    pt-3
+    items-center
+    justify-center
+}
+
+
+.footer .footer__item:nth-child(2)
+{
+    @apply
+    pb-3
+    md:pb-0
+    md:border-r-[.1rem]
+    md:border-light
+    md:border-l-[.1rem]
+
+}
+.footer .footer__item:nth-child(2) ul
+{
+    @apply 
+    flex
+    flex-col
+    gap-2
+    items-center
+    justify-center
+
+}
+.footer .footer__item:nth-child(2) h5
+{
+    @apply
+    text-[1rem]
+    pb-3
+    md:pb-4
+    md:font-bold
+}
+
+.footer .footer__item:nth-child(2) li
+{
+    
+    @apply
+    text-[.7rem]
+}
+
+.footer .footer__item:last-child ul
+{
+    @apply
+    flex
+    flex-col
+    gap-2
+    items-center
+    justify-center
+    md:items-start
+    md:px-3
+
+}
+.footer .footer__item:last-child ul li
+{
+    @apply
+    text-[.7rem]
+}
+
+.footer .footer__item:last-child h5
+{
+    @apply
+    text-[1rem]
+    pb-4
+    md:text-left
+    md:px-3
+    md:font-bold
+}
+
+@layer utilities
+{
+    .btn-darker
+    {
+        @apply 
+        py-4
+        px-6
+        bg-frntlne_clr_darker
+        rounded-full
+        text-light
+        font-bold
+        uppercase
+        hover:border-[.1rem]
+        hover:border-frntlne_clr_darker
+        hover:bg-transparent
+        hover:text-frntlne_clr
+        transition-all
+    }
+
+    .btn-bgLess
+    {
+        @apply 
+        py-5
+        px-6
+        border-[.1rem]
+        border-frntlne_clr_darker
+        rounded-full
+        text-frntlne_clr_darker
+        font-bold
+        uppercase
+        transition-all
+        hover:border-gray_banner
+        hover:bg-gray_banner
+        hover:text-frntlne_clr
+        
+    }
+
+    .sectionHeader h5 span
+    {
+        @apply 
+        font-bold
+        text-[2rem]
+        text-dark
+        text-center
+    }
+
+    .sectionHeader h5 
+    {
+        @apply
+        text-[2rem]
+        text-center
+    }
+
+    .sectionHeader2 h5 span
+    {
+        @apply 
+        font-bold
+        text-[2rem]
+        text-light
+    } 
+
+    .sectionHeader2 h5 
+    {
+        @apply
+        text-[2rem]
+    }
+
+    .sectionHeader3 h5 
+    {
+        @apply
+        text-[1.7rem]
+        text-center
+    }
+
+    .sectionHeader3 h5 span
+    {
+        @apply 
+        font-bold
+        text-[1.7rem]
+        text-dark
+    } 
+  
+}
