@@ -66,24 +66,24 @@ body {
   .header__action .header__btn a {
     @apply flex gap-[1rem] items-center hover:text-berde;
   }
-  .header__action .header__kamote {
+  .header__action .header__navdd {
     @apply md:flex gap-5 hidden;
   }
-  .header__action .header__kamote li a {
+  .header__action .header__navdd li a {
     @apply text-frntlne_clr
         uppercase;
   }
 
-  ul.header__kamote li {
+  ul.header__navdd li {
     @apply relative overflow-visible;
   }
-  ul.header__kamote li::after {
+  ul.header__navdd li::after {
     @apply content-[''] 
     absolute bottom-[-8px] left-1/2
     bg-frntlne_clr_darker h-[3px] w-0
     transition-all duration-500;
   }
-  ul.header__kamote li:hover::after {
+  ul.header__navdd li:hover::after {
     @apply w-full left-0  z-[999];
   }
   .burger__menu {
@@ -245,10 +245,10 @@ body {
 }
 .testimonies__text .text__w1 i:last-child {
   @apply absolute
-    top-[34rem]
-    left-[16rem]
+    top-[27rem]
+    left-[20rem]
     md:top-[19rem]
-    md:left-[23rem];
+    md:left-[25rem];
 }
 .testimonies__text .text__w2 i:first-child {
   @apply absolute
@@ -257,10 +257,10 @@ body {
 }
 .testimonies__text .text__w2 i:last-child {
   @apply absolute
-      top-[24rem]
-      left-[16rem]
+      top-[19rem]
+      left-[18rem]
       md:top-[13rem]
-      md:left-[20.5rem];
+      md:left-[24rem];
 }
 .testimonies__text .text__w3 i:first-child {
   @apply absolute
@@ -269,10 +269,10 @@ body {
 }
 .testimonies__text .text__w3 i:last-child {
   @apply absolute
-        top-[16rem]
-        left-[16.5rem]
+        top-[14rem]
+        left-[20rem]
         md:top-[10rem]
-        md:left-[20rem];
+        md:left-[28rem];
 }
 .testimonies__text .text__w4 i:first-child {
   @apply absolute
@@ -293,8 +293,8 @@ body {
 }
 .testimonies__text .text__w5 i:last-child {
   @apply absolute
-            top-[9rem]
-            left-[16.5rem]
+            top-[7rem]
+            left-[17rem]
             md:top-[5rem]
             md:left-[21rem];
 }
@@ -305,10 +305,10 @@ body {
 }
 .testimonies__text .text__w6 i:last-child {
   @apply absolute
-              top-[11rem]
-              left-[17rem]
+              top-[7rem]
+              left-[20rem]
               md:top-[6rem]
-              md:left-[24rem];
+              md:left-[26rem];
 }
 .testimonies__text .text__w7 i:first-child {
   @apply absolute
@@ -317,8 +317,8 @@ body {
 }
 .testimonies__text .text__w7 i:last-child {
   @apply absolute
-                top-[17rem]
-                left-[17rem]
+                top-[13rem]
+                left-[20rem]
                 md:top-[9rem]
                 md:left-[32rem];
 }

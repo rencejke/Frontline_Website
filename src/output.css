@@ -721,29 +721,29 @@ video {
   color: rgb(0 99 65 / var(--tw-text-opacity));
 }
 
-.header__action .header__kamote {
+.header__action .header__navdd {
   display: none;
   gap: 1.25rem;
 }
 
 @media (min-width: 768px) {
-  .header__action .header__kamote {
+  .header__action .header__navdd {
     display: flex;
   }
 }
 
-.header__action .header__kamote li a {
+.header__action .header__navdd li a {
   text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(172 57 113 / var(--tw-text-opacity));
 }
 
-ul.header__kamote li {
+ul.header__navdd li {
   position: relative;
   overflow: visible;
 }
 
-ul.header__kamote li::after {
+ul.header__navdd li::after {
   position: absolute;
   bottom: -8px;
   left: 50%;
@@ -758,7 +758,7 @@ ul.header__kamote li::after {
   content: var(--tw-content);
 }
 
-ul.header__kamote li:hover::after {
+ul.header__navdd li:hover::after {
   left: 0px;
   z-index: 999;
   width: 100%;
@@ -1354,14 +1354,14 @@ body {
 
 .testimonies__text .text__w1 i:last-child {
   position: absolute;
-  top: 34rem;
-  left: 16rem;
+  top: 27rem;
+  left: 20rem;
 }
 
 @media (min-width: 768px) {
   .testimonies__text .text__w1 i:last-child {
     top: 19rem;
-    left: 23rem;
+    left: 25rem;
   }
 }
 
@@ -1373,14 +1373,14 @@ body {
 
 .testimonies__text .text__w2 i:last-child {
   position: absolute;
-  top: 24rem;
-  left: 16rem;
+  top: 19rem;
+  left: 18rem;
 }
 
 @media (min-width: 768px) {
   .testimonies__text .text__w2 i:last-child {
     top: 13rem;
-    left: 20.5rem;
+    left: 24rem;
   }
 }
 
@@ -1392,14 +1392,14 @@ body {
 
 .testimonies__text .text__w3 i:last-child {
   position: absolute;
-  top: 16rem;
-  left: 16.5rem;
+  top: 14rem;
+  left: 20rem;
 }
 
 @media (min-width: 768px) {
   .testimonies__text .text__w3 i:last-child {
     top: 10rem;
-    left: 20rem;
+    left: 28rem;
   }
 }
 
@@ -1430,8 +1430,8 @@ body {
 
 .testimonies__text .text__w5 i:last-child {
   position: absolute;
-  top: 9rem;
-  left: 16.5rem;
+  top: 7rem;
+  left: 17rem;
 }
 
 @media (min-width: 768px) {
@@ -1449,14 +1449,14 @@ body {
 
 .testimonies__text .text__w6 i:last-child {
   position: absolute;
-  top: 11rem;
-  left: 17rem;
+  top: 7rem;
+  left: 20rem;
 }
 
 @media (min-width: 768px) {
   .testimonies__text .text__w6 i:last-child {
     top: 6rem;
-    left: 24rem;
+    left: 26rem;
   }
 }
 
@@ -1468,8 +1468,8 @@ body {
 
 .testimonies__text .text__w7 i:last-child {
   position: absolute;
-  top: 17rem;
-  left: 17rem;
+  top: 13rem;
+  left: 20rem;
 }
 
 @media (min-width: 768px) {
@@ -1974,10 +1974,6 @@ button.tns-nav-active {
     display: block;
   }
 
-  .xs\:pb-\[8rem\] {
-    padding-bottom: 8rem;
-  }
-
   .xs\:pb-\[12rem\] {
     padding-bottom: 12rem;
   }
@@ -2012,16 +2008,12 @@ button.tns-nav-active {
     padding-bottom: 1.5rem;
   }
 
-  .md\:pb-\[12rem\] {
-    padding-bottom: 12rem;
+  .md\:pb-\[8rem\] {
+    padding-bottom: 8rem;
   }
 
   .md\:pt-20 {
     padding-top: 5rem;
-  }
-
-  .md\:pb-\[8rem\] {
-    padding-bottom: 8rem;
   }
 
   .md\:opacity-0 {
