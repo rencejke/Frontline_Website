@@ -826,20 +826,12 @@ ul.header__kamote li:hover::after {
   position: relative;
 }
 
-.top-\[\] {
-  top: ;
+.left-\[-1\.5rem\] {
+  left: -1.5rem;
 }
 
-.top-\[30rem\] {
-  top: 30rem;
-}
-
-.top-\[2rem\] {
-  top: 2rem;
-}
-
-.top-\[10rem\] {
-  top: 10rem;
+.top-\[2\.2rem\] {
+  top: 2.2rem;
 }
 
 .mx-auto {
@@ -847,37 +839,59 @@ ul.header__kamote li:hover::after {
   margin-right: auto;
 }
 
-.h-\[3rem\] {
-  height: 3rem;
+.flex {
+  display: flex;
 }
 
-.h-\[20rem\] {
-  height: 20rem;
+.h-\[9\.5rem\] {
+  height: 9.5rem;
 }
 
 .w-\[1070px\] {
   width: 1070px;
 }
 
-.w-\[3rem\] {
-  width: 3rem;
+.w-\[18rem\] {
+  width: 18rem;
 }
 
 .grow {
   flex-grow: 1;
 }
 
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .list-circle {
   list-style-type: circle;
 }
 
-.bg-\[\] {
-  background-color: ;
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.border-t-\[\.2rem\] {
+  border-top-width: .2rem;
+}
+
+.border-frntlne_clr_darker {
+  --tw-border-opacity: 1;
+  border-color: rgb(106 16 63 / var(--tw-border-opacity));
 }
 
 .bg-light {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-12 {
@@ -914,16 +928,16 @@ ul.header__kamote li:hover::after {
   padding-bottom: 2.25rem;
 }
 
-.pb-\[8rem\] {
-  padding-bottom: 8rem;
-}
-
 .text-center {
   text-align: center;
 }
 
 .text-justify {
   text-align: justify;
+}
+
+.text-\[\.8rem\] {
+  font-size: .8rem;
 }
 
 .text-\[\.9rem\] {
@@ -952,11 +966,6 @@ ul.header__kamote li:hover::after {
 
 .leading-8 {
   line-height: 2rem;
-}
-
-.text-berde {
-  --tw-text-opacity: 1;
-  color: rgb(0 99 65 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1942,6 +1951,10 @@ button.tns-nav-active {
   background-color: rgb(172 57 113 / var(--tw-bg-opacity));
 }
 
+.hover\:opacity-100:hover {
+  opacity: 1;
+}
+
 .group:hover .group-hover\:-translate-y-2 {
   --tw-translate-y: -0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1959,6 +1972,14 @@ button.tns-nav-active {
 
   .xs\:block {
     display: block;
+  }
+
+  .xs\:pb-\[8rem\] {
+    padding-bottom: 8rem;
+  }
+
+  .xs\:pb-\[12rem\] {
+    padding-bottom: 12rem;
   }
 }
 
@@ -1991,8 +2012,16 @@ button.tns-nav-active {
     padding-bottom: 1.5rem;
   }
 
+  .md\:pb-\[12rem\] {
+    padding-bottom: 12rem;
+  }
+
   .md\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .md\:pb-\[8rem\] {
+    padding-bottom: 8rem;
   }
 
   .md\:opacity-0 {
